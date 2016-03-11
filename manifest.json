@@ -7,6 +7,11 @@
     "default_popup": "popup.html"
   },
   "permissions": [
+    "tabs",
     "http://tumblrapi-blooper.rhcloud.com/"
-  ]
+  ],
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "js":      ["js/jquery-2.2.1.min.js", "js/content.js"]
+  }]
 }

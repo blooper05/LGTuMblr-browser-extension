@@ -5,4 +5,12 @@ $.getJSON('http://tumblrapi-blooper.rhcloud.com/photos', null, function (data, s
   });
 
   $('#loading').fadeOut();
+
+  $('.image').on('click', function (data) {
+    var url = this.src;
+
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tab) {
+      chrome.tabs.sendMessage(tab[0].id, { url: url }, function (response) {});
+    });
+  });
 });
