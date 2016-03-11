@@ -3,4 +3,6 @@ $.getJSON('http://tumblrapi-blooper.rhcloud.com/photos', null, function (data, s
     var img = $('<img>').addClass('image').attr('src', this);
     $('.row').append(img).hide().fadeIn('fast');
   });
+
+  $('#loading').fadeOut();
 });
