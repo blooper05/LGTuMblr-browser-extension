@@ -1,0 +1,17 @@
+.container {
+  width: 540px;
+  height: 640px;
+}
+
+.row {
+  width: 500px;
+  margin: 0 auto;
+}
+
+img.image {
+  display: block;
+  margin: 8px auto;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .15) 0 0 2px;
+  cursor: pointer;
+}
