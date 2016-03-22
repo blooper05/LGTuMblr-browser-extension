@@ -37,3 +37,8 @@ img#loading {
   border-radius: 50%;
   background-image: url(../img/paper.png);
 }
+
+img#reload:hover {
+  opacity: .5;
+  cursor: pointer;
+}
