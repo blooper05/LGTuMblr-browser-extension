@@ -28,3 +28,12 @@ img#loading {
   left: 0;
   margin: auto;
 }
+
+.footer {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  padding: 4px;
+  border-radius: 50%;
+  background-image: url(../img/paper.png);
+}
