@@ -17,11 +17,6 @@ img.image {
   margin: 8px auto;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, .15) 0 0 2px;
-}
-
-img.image:hover {
-  position: relative;
-  left: 8px;
   cursor: pointer;
 }
 
