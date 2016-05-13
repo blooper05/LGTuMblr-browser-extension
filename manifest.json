@@ -8,6 +8,7 @@
   },
   "permissions": [
     "tabs",
+    "clipboardRead",
     "http://tumblrapi-blooper.rhcloud.com/"
   ],
   "content_scripts": [{

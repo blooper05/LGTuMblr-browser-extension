@@ -23,8 +23,12 @@ function load() {
 }
 
 function loaded() {
+  const PREFIX = 'http://hisaichilgtm.herokuapp.com/';
+
   $('.image').on('click', function (data) {
-    var url = this.src;
+    var url = PREFIX + this.src.replace(/https/g, 'http');
+
+    copy(url);
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tab) {
       chrome.tabs.sendMessage(tab[0].id, { url: url }, function (response) {});
@@ -37,4 +41,14 @@ function loading() {
     this.remove();
   });
   $('#loading').fadeIn('fast');
+}
+
+function copy(url) {
+  var textArea = $('<textarea>').addClass('copy').val(url);
+  $('.footer').append(textArea);
+
+  textArea.select();
+  document.execCommand('copy');
+
+  $('.copy').remove();
 }
