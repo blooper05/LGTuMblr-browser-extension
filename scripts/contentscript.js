@@ -1,4 +1,6 @@
-chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-  var comment = '![LGTM](' + request.url + ')';
-  $('#new_comment_field').val(comment);
+'use strict';
+
+chrome.runtime.onMessage.addListener(request => {
+  const comment = `![LGTM](${request.url})`;
+  document.getElementById('new_comment_field').value = comment;
 });

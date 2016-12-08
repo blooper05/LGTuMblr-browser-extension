@@ -1,54 +1,54 @@
-$(function () {
-  load();
+'use strict';
 
-  $('#reload').on('click', function (data) {
-    loading();
-    load();
-  });
-});
+document.addEventListener('DOMContentLoaded', () => load());
 
-function load() {
-  const URL = 'http://tumblrapi-blooper.rhcloud.com/photos';
+const reload = document.getElementById('reload');
+reload.addEventListener('click', () => load());
 
-  $.getJSON(URL, null, function (data, status) {
-    $.each(data, function () {
-      var img = $('<img>').addClass('image').attr('src', this);
-      $('main').append(img).hide().fadeIn('fast');
-    });
+const load = () => {
+  loading();
+  const url = 'http://tumblrapi-blooper.rhcloud.com/photos';
+  fetch(url).then(res => res.json())
+            .then(urls => insert(urls))
+            .then(() => loaded())
+};
 
-    $('#loading').fadeOut();
+const loaded = () => {
+  const prefix = 'http://hisaichilgtm.herokuapp.com/';
+  const images = document.getElementsByClassName('image');
 
-    loaded();
-  });
-}
-
-function loaded() {
-  const PREFIX = 'http://hisaichilgtm.herokuapp.com/';
-
-  $('.image').on('click', function (data) {
-    var url = PREFIX + this.src.replace(/https/g, 'http');
-
-    copy(url);
-
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tab) {
-      chrome.tabs.sendMessage(tab[0].id, { url: url }, function (response) {});
+  Array.from(images).forEach(image => {
+    image.addEventListener('click', event => {
+      const url = prefix + event.srcElement.src.replace(/https/g, 'http');
+      copy(url);
+      paste(url);
     });
   });
-}
+};
 
-function loading() {
-  $('.image').fadeOut(null, function () {
-    this.remove();
-  });
-  $('#loading').fadeIn('fast');
-}
+const loading = () => {
+  const images  = document.getElementsByClassName('image');
+  const loading = document.getElementById('loading');
+  Array.from(images).forEach(image => image.remove());
+  loading.style.display = '';
+};
 
-function copy(url) {
-  var textArea = $('<textarea>').addClass('copy').val(url);
-  $('footer').append(textArea);
+const insert = urls => {
+  const loading = document.getElementById('loading');
+  const imgs    = urls.map(url => `<img class="image" src="${url}">`);
+  loading.insertAdjacentHTML('beforebegin', imgs.join('\n'));
+  loading.style.display = 'none';
+};
 
-  textArea.select();
+const copy = url => {
+  const copy = document.getElementById('copy');
+  copy.insertAdjacentHTML('beforeend', url);
+  copy.select();
   document.execCommand('copy');
+};
 
-  $('.copy').remove();
-}
+const paste = url => {
+  chrome.tabs.query({active: true, currentWindow: true}, tab => {
+    chrome.tabs.sendMessage(tab[0].id, {url}, () => {});
+  });
+};
