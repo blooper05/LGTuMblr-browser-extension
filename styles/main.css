@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/paper.png);
+  background-image: url(../images/paper.png);
 }
 
 .container {
@@ -35,7 +35,7 @@ img.image {
   bottom: 24px;
   padding: 4px;
   border-radius: 50%;
-  background-image: url(../img/paper.png);
+  background-image: url(../images/paper.png);
 }
 
 img#reload:hover {
