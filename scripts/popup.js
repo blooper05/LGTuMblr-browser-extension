@@ -41,10 +41,13 @@ const insert = urls => {
 };
 
 const copy = url => {
-  const copy = document.getElementById('copy');
-  copy.insertAdjacentHTML('beforeend', url);
-  copy.select();
+  const copy = `<textarea id="copy">${url}</textarea>`;
+  reload.insertAdjacentHTML('afterend', copy);
+
+  const dom = document.getElementById('copy');
+  dom.select();
   document.execCommand('copy');
+  dom.remove();
 };
 
 const paste = url => {

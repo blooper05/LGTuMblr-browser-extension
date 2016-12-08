@@ -38,7 +38,3 @@ img#reload:hover {
   opacity: .5;
   cursor: pointer;
 }
-
-textarea#copy {
-  display: none;
-}
