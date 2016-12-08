@@ -13,7 +13,7 @@ function load() {
   $.getJSON(URL, null, function (data, status) {
     $.each(data, function () {
       var img = $('<img>').addClass('image').attr('src', this);
-      $('.row').append(img).hide().fadeIn('fast');
+      $('main').append(img).hide().fadeIn('fast');
     });
 
     $('#loading').fadeOut();
@@ -45,7 +45,7 @@ function loading() {
 
 function copy(url) {
   var textArea = $('<textarea>').addClass('copy').val(url);
-  $('.footer').append(textArea);
+  $('footer').append(textArea);
 
   textArea.select();
   document.execCommand('copy');
