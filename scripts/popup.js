@@ -7,7 +7,7 @@ reload.addEventListener('click', () => load());
 
 const load = () => {
   loading();
-  const url = 'http://tumblrapi-blooper.rhcloud.com/photos';
+  const url = 'https://lgtumblr-api.herokuapp.com/images';
   fetch(url).then(res => res.json())
             .then(urls => insert(urls))
             .then(() => loaded())
