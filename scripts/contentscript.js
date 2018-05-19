@@ -3,6 +3,7 @@
 chrome.runtime.onMessage.addListener(request => {
   comment(request.url);
   approve();
+  submit();
 });
 
 const comment = url => {
@@ -12,4 +13,8 @@ const comment = url => {
 
 const approve = () => {
   document.getElementsByName('pull_request_review[event]')[1].checked = true;
+};
+
+const submit = () => {
+  document.getElementById('pull_request_review_body').form.submit();
 };
