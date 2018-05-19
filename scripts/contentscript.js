@@ -2,5 +2,5 @@
 
 chrome.runtime.onMessage.addListener(request => {
   const comment = `![LGTM](${request.url})`;
-  document.getElementById('new_comment_field').value = comment;
+  document.getElementById('pull_request_review_body').value = comment;
 });
