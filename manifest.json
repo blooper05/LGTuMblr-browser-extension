@@ -15,11 +15,6 @@
     },
     "default_popup": "popup.html"
   },
-  "permissions": [
-    "tabs",
-    "clipboardRead",
-    "http://tumblrapi-blooper.rhcloud.com/"
-  ],
   "content_scripts": [{
     "matches": ["https://github.com/*"],
     "js":      ["scripts/contentscript.js"]
