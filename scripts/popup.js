@@ -14,12 +14,13 @@ const load = () => {
 };
 
 const loaded = () => {
-  const prefix = 'http://hisaichilgtm.herokuapp.com/';
+  const prefix = 'https://res.cloudinary.com/hbt3vhx4z/t_lgtm/f_auto,q_auto/tumblr/';
   const images = document.getElementsByClassName('image');
 
   Array.from(images).forEach(image => {
     image.addEventListener('click', event => {
-      const url = prefix + event.srcElement.src.replace(/https/g, 'http');
+      const regexp = new RegExp('https://64\.media\.tumblr\.com/');
+      const url    = prefix + event.srcElement.src.replace(regexp, '');
       copy(url);
       paste(url);
     });
