@@ -1,20 +1,13 @@
 import { classnames } from 'tailwindcss-classnames';
+import Image from '../components/Image';
 import useFetchImages from '../hooks/useRequest';
 
-export default function Index() {
-  const classNames = {
-    main: classnames('p-8', 'w-full', 'bg-white'),
-    grid: classnames('grid', 'gap-8', 'grid-cols-4'),
-    card: classnames(
-      'm-auto',
-      'rounded-lg',
-      'shadow-lg',
-      'cursor-pointer',
-      'overflow-hidden',
-    ),
-    image: classnames('w-full', 'h-full', 'object-cover'),
-  };
+const classNames = {
+  main: classnames('p-8', 'w-full', 'bg-white'),
+  grid: classnames('grid', 'gap-8', 'grid-cols-4'),
+};
 
+export default function Index() {
   const { data, error } = useFetchImages();
 
   if (error) return <div>Oops, something went wrong!</div>;
@@ -24,11 +17,7 @@ export default function Index() {
     <main className={classNames.main}>
       <div className={classNames.grid}>
         {data.map((url: string) => {
-          return (
-            <div className={classNames.card} key={url}>
-              <img className={classNames.image} src={url} />
-            </div>
-          );
+          return <Image url={url} key={url} />;
         })}
       </div>
     </main>
