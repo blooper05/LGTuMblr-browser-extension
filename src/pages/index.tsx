@@ -1,5 +1,5 @@
 import { classnames } from 'tailwindcss-classnames';
-import useSWR from 'swr';
+import useFetchImages from '../hooks/useRequest';
 
 export default function Index() {
   const classNames = {
@@ -15,10 +15,7 @@ export default function Index() {
     image: classnames('w-full', 'h-full', 'object-cover'),
   };
 
-  const fetcher = (url: string) => fetch(url).then((res) => res.json());
-  const API_URL = 'https://lgtumblr-api.herokuapp.com/images';
-
-  const { data, error } = useSWR(API_URL, fetcher);
+  const { data, error } = useFetchImages();
 
   if (error) return <div>Oops, something went wrong!</div>;
   if (!data) return <div>Loading...</div>;
