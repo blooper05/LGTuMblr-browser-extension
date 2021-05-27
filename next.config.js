@@ -10,6 +10,8 @@ module.exports = {
     return config;
   },
 
+  assetPrefix: 'assets',
+
   experimental: {
     eslint: true,
   },
