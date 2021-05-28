@@ -8,7 +8,7 @@ const classNames = {
 };
 
 export default function Index() {
-  const { data, error } = useFetchImages();
+  const { data, error, size, setSize } = useFetchImages();
 
   if (error) return <div>Oops, something went wrong!</div>;
   if (!data) return <div>Loading...</div>;
@@ -16,9 +16,10 @@ export default function Index() {
   return (
     <main className={classNames.main}>
       <div className={classNames.grid}>
-        {data.map((url: string) => {
-          return <Image url={url} key={url} />;
+        {data.map((images: string[]) => {
+          return images.map((url: string) => <Image url={url} key={url} />);
         })}
+        <button onClick={() => setSize(size + 1)}>LOAD MORE</button>
       </div>
     </main>
   );
