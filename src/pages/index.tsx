@@ -8,11 +8,14 @@ const classNames = {
   grid: classnames('grid', 'gap-8', 'grid-cols-4'),
 };
 
+const error = <div>Oops, something went wrong!</div>;
+const loader = <div>Loading...</div>;
+
 export default function Index() {
   const { data, error, size, setSize } = useFetchImages();
 
-  if (error) return <div>Oops, something went wrong!</div>;
-  if (!data) return <div>Loading...</div>;
+  if (error) return error;
+  if (!data) return loader;
 
   const fetchData = () => setSize(size + 1);
   const fetchedData = [].concat(...data);
@@ -23,7 +26,7 @@ export default function Index() {
         next={fetchData}
         hasMore={true}
         dataLength={fetchedData.length}
-        loader={<div>Loading...</div>}
+        loader={loader}
         className={classNames.grid}
       >
         {fetchedData.map((url: string, i: number) => (
