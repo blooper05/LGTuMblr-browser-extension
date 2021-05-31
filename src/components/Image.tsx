@@ -19,6 +19,10 @@ const handleClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
   const originalUrl = event.currentTarget.src;
   const lgtmizedUrl = originalUrl.replace(REGEXP, PREFIX);
 
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    tabs[0].id && chrome.tabs.sendMessage(tabs[0].id, { lgtmizedUrl });
+  });
+
   navigator.clipboard.writeText(lgtmizedUrl);
 };
 
