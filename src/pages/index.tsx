@@ -2,6 +2,7 @@ import { classnames } from 'tailwindcss-classnames';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Image from '../components/Image';
 import Loader from '../components/Loader';
+import Error from '../components/Error';
 import useFetchImages from '../hooks/useRequest';
 
 const classNames = {
@@ -9,12 +10,10 @@ const classNames = {
   grid: classnames('grid', 'gap-8', 'grid-cols-4'),
 };
 
-const error = <div>Oops, something went wrong!</div>;
-
 export default function Index() {
   const { data, error, size, setSize } = useFetchImages();
 
-  if (error) return error;
+  if (error) return <Error />;
   if (!data) return <Loader />;
 
   const fetchData = () => setSize(size + 1);
