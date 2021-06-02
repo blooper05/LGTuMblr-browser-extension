@@ -14,7 +14,7 @@ export default function Index() {
   const { data, error, size, setSize } = useFetchImages();
 
   if (error) return <Error />;
-  if (!data) return <Loader />;
+  if (!data) return <Loader withLogo={true} />;
 
   const fetchData = () => setSize(size + 1);
   const fetchedData = [].concat(...data);

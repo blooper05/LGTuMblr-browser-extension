@@ -2,6 +2,7 @@ import { classnames } from 'tailwindcss-classnames';
 
 const classNames = {
   main: classnames('flex', 'justify-center', 'p-12'),
+  logo: classnames('-mr-8', '-ml-16', 'h-64'),
   dot: classnames(
     'my-auto',
     'mr-1',
@@ -13,9 +14,10 @@ const classNames = {
   ),
 };
 
-export default function Loader() {
+export default function Loader({ withLogo }: { withLogo?: boolean }) {
   return (
     <div className={classNames.main}>
+      {withLogo && <img className={classNames.logo} src="/images/logo.svg" />}
       <span
         className={classNames.dot}
         style={{ animationDelay: '100ms' }}
