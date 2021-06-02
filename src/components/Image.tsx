@@ -7,6 +7,12 @@ const classNames = {
     'shadow-lg',
     'cursor-pointer',
     'overflow-hidden',
+    'transition',
+    'duration-500',
+    'ease-in-out',
+    'transform-gpu',
+    'hover:-translate-y-1',
+    'hover:scale-110',
   ),
   image: classnames('w-full', 'h-full', 'object-cover'),
 };

@@ -6,8 +6,8 @@ import Error from '../components/Error';
 import useFetchImages from '../hooks/useRequest';
 
 const classNames = {
-  main: classnames('p-8', 'w-full', 'bg-white'),
-  grid: classnames('grid', 'gap-8', 'grid-cols-4'),
+  main: classnames('p-4', 'w-full', 'bg-white'),
+  grid: classnames('grid', 'gap-8', 'grid-cols-4', 'p-4'),
 };
 
 export default function Index() {
