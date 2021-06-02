@@ -2,19 +2,19 @@ import { classnames } from 'tailwindcss-classnames';
 
 const classNames = {
   card: classnames(
+    'overflow-hidden',
     'm-auto',
     'rounded-lg',
     'shadow-lg',
-    'cursor-pointer',
-    'overflow-hidden',
     'transition',
     'duration-500',
     'ease-in-out',
     'transform-gpu',
-    'hover:-translate-y-1',
     'hover:scale-110',
+    'hover:-translate-y-1',
+    'cursor-pointer',
   ),
-  image: classnames('w-full', 'h-full', 'object-cover'),
+  image: classnames('object-cover', 'w-full', 'h-full'),
 };
 
 const REGEXP = new RegExp('https://64.media.tumblr.com/');

@@ -7,7 +7,7 @@ import useFetchImages from '../hooks/useRequest';
 
 const classNames = {
   main: classnames('p-4', 'w-full', 'bg-white'),
-  grid: classnames('grid', 'gap-8', 'grid-cols-4', 'p-4'),
+  grid: classnames('grid', 'grid-cols-4', 'gap-8', 'p-4'),
 };
 
 export default function Index() {
