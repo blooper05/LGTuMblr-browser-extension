@@ -1419,11 +1419,13 @@ eslint-plugin-react@^7.23.1:
     resolve "^2.0.0-next.3"
     string.prototype.matchall "^4.0.4"
 
-eslint-plugin-tailwindcss@^1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-1.11.0.tgz#d9077372e8fe559822dfb891039041d14b04982a"
-  integrity sha512-ereeFwYiOoSAm0uYP1GqyjRCN+9Z1Q7OmhV9Xfaji/R0FLGOIyEGV8OLZO0926IQdTBJcX76N34HPzTp0vxE3Q==
+eslint-plugin-tailwindcss@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-1.12.0.tgz#80624027704e21b8e3fb6c76d79f70cf294d3bb4"
+  integrity sha512-kyNjopwWe4lnBhRrbvHJOZsI9Mo/hbgyrXtHBE58wJXb/IfahSLEc/A/7Cfelh37AcjO7L7WVhrfh2NyFPKqUQ==
   dependencies:
+    fast-glob "^3.2.5"
+    postcss "^8.3.0"
     tailwindcss "^2.1.2"
 
 eslint-scope@^5.1.1:
@@ -3340,10 +3342,10 @@ postcss@^6.0.9:
     source-map "^0.6.1"
     supports-color "^5.4.0"
 
-postcss@^8.1.6, postcss@^8.2.1:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.0.tgz#b1a713f6172ca427e3f05ef1303de8b65683325f"
-  integrity sha512-+ogXpdAjWGa+fdYY5BQ96V/6tAo+TdSSIMP5huJBIygdWwKtVoB5JWZ7yUd4xZ8r+8Kvvx4nyg/PQ071H4UtcQ==
+postcss@^8.1.6, postcss@^8.2.1, postcss@^8.3.0:
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.1.tgz#71f380151c227f83b898294a46481f689f86b70a"
+  integrity sha512-9qH0MGjsSm+fjxOi3GnwViL1otfi7qkj+l/WX5gcRGmZNGsIcqc+A5fBkE6PUobEQK4APqYVaES+B3Uti98TCw==
   dependencies:
     colorette "^1.2.2"
     nanoid "^3.1.23"
