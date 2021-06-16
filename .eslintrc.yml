@@ -5,3 +5,5 @@ extends:
   - plugin:tailwindcss/recommended
 plugins:
   - tailwindcss
+rules:
+  '@next/next/no-img-element': warn
