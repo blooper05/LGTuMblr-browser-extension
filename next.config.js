@@ -7,4 +7,6 @@ module.exports = {
   },
 
   assetPrefix: 'assets',
+
+  reactStrictMode: true,
 };
