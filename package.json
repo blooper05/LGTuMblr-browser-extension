@@ -7,7 +7,8 @@
     "build": "next build",
     "export": "next export",
     "postexport": "cpx --clean './out/_next/**/*' ./out/assets/_next/ && rimraf ./out/_next/",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "10.2.3",
@@ -20,8 +21,8 @@
     "@types/chrome": "^0.0.145",
     "@types/react": "17.0.11",
     "cpx": "^1.5.0",
-    "eslint": "^7.28.0",
-    "eslint-config-next": "^10.2.3",
+    "eslint": "7.28.0",
+    "eslint-config-next": "10.2.3",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-tailwindcss": "^1.13.2",
     "prettier": "^2.3.1",

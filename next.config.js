@@ -7,8 +7,4 @@ module.exports = {
   },
 
   assetPrefix: 'assets',
-
-  experimental: {
-    eslint: true,
-  },
 };
