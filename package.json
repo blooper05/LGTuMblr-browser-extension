@@ -24,7 +24,7 @@
     "eslint": "7.28.0",
     "eslint-config-next": "11.0.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-tailwindcss": "^1.13.2",
+    "eslint-plugin-tailwindcss": "^1.13.3",
     "prettier": "^2.3.1",
     "rimraf": "^3.0.2",
     "tailwindcss-classnames": "^2.1.3",
