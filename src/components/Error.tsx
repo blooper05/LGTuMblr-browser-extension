@@ -5,12 +5,10 @@ const classNames = {
   message: classnames('my-auto', 'text-blue-400'),
 };
 
-const Component = () => {
-  return (
-    <div className={classNames.main}>
-      <span className={classNames.message}>Oops, something went wrong!</span>
-    </div>
-  );
-};
+const Component = () => (
+  <div className={classNames.main}>
+    <span className={classNames.message}>Oops, something went wrong!</span>
+  </div>
+);
 
 export default Component;

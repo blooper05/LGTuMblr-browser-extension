@@ -14,24 +14,13 @@ const classNames = {
   ),
 };
 
-const Component = ({ withLogo }: { withLogo?: boolean }) => {
-  return (
-    <div className={classNames.main}>
-      {withLogo && <img className={classNames.logo} src="/images/logo.svg" />}
-      <span
-        className={classNames.dot}
-        style={{ animationDelay: '100ms' }}
-      ></span>
-      <span
-        className={classNames.dot}
-        style={{ animationDelay: '300ms' }}
-      ></span>
-      <span
-        className={classNames.dot}
-        style={{ animationDelay: '500ms' }}
-      ></span>
-    </div>
-  );
-};
+const Component = ({ withLogo }: { withLogo?: boolean }) => (
+  <div className={classNames.main}>
+    {withLogo && <img className={classNames.logo} src="/images/logo.svg" />}
+    <span className={classNames.dot} style={{ animationDelay: '100ms' }}></span>
+    <span className={classNames.dot} style={{ animationDelay: '300ms' }}></span>
+    <span className={classNames.dot} style={{ animationDelay: '500ms' }}></span>
+  </div>
+);
 
 export default Component;

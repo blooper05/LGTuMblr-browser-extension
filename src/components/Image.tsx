@@ -32,12 +32,10 @@ const handleClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
   navigator.clipboard.writeText(lgtmizedUrl);
 };
 
-const Component = ({ url }: { url: string }) => {
-  return (
-    <div className={classNames.card}>
-      <img className={classNames.image} src={url} onClick={handleClick} />
-    </div>
-  );
-};
+const Component = ({ url }: { url: string }) => (
+  <div className={classNames.card}>
+    <img className={classNames.image} src={url} onClick={handleClick} />
+  </div>
+);
 
 export default Component;
