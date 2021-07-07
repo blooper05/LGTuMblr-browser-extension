@@ -14,7 +14,7 @@ const classNames = {
   ),
 };
 
-export default function Loader({ withLogo }: { withLogo?: boolean }) {
+const Component = ({ withLogo }: { withLogo?: boolean }) => {
   return (
     <div className={classNames.main}>
       {withLogo && <img className={classNames.logo} src="/images/logo.svg" />}
@@ -32,4 +32,6 @@ export default function Loader({ withLogo }: { withLogo?: boolean }) {
       ></span>
     </div>
   );
-}
+};
+
+export default Component;
