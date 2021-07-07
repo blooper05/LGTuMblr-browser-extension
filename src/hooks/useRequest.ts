@@ -9,8 +9,10 @@ const getKey = (pageIndex: number, previousPageData: any) => {
   return API_BASE_URL + params;
 };
 
-export default function useFetchImages() {
+const Hook = () => {
   const { data, error, size, setSize } = useSWRInfinite(getKey);
 
   return { data, error, size, setSize };
-}
+};
+
+export default Hook;
