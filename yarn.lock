@@ -4755,10 +4755,10 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-windicss-webpack-plugin@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.2.4.tgz#c799370c307af48f1b7dd38b32fdce551a250f3d"
-  integrity sha512-pARSqzaQUTVuG2Rj2zRuILTZ/KYiOvDNyHuG2/8H5/110QnmVItMqGbfRfuJp7nZVDSivKzOkfeYxgOYCZVSpg==
+windicss-webpack-plugin@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.2.5.tgz#66abe27ac17bfd8507c2f69f7798cca72f44f9d7"
+  integrity sha512-RhNHwyecTrq71Q4seAJxLFierPE+lvbYroR97iRPII1jEsV60c5KOf/4KdlRmuQHREK/An0pMKuAUbJa7DB7Cw==
   dependencies:
     "@windicss/plugin-utils" "1.2.0"
     debug "^4.3.1"
