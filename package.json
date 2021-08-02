@@ -21,7 +21,7 @@
     "@types/chrome": "^0.0.149",
     "@types/react": "17.0.15",
     "cpx": "^1.5.0",
-    "eslint": "7.31.0",
+    "eslint": "7.32.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-tailwindcss": "^1.14.1",
