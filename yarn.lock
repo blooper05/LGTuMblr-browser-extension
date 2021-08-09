@@ -283,27 +283,27 @@
     "@typescript-eslint/types" "4.25.0"
     eslint-visitor-keys "^2.0.0"
 
-"@windicss/config@1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.2.5.tgz#1bc8e175a8b8cbf2e1bdb67769eb57e2ab2536fb"
-  integrity sha512-XzbvVQ9crDRnzHLA9t0atejAIus0X+P4l9SFPmGhUXycI63Ae0SfNzdw5q56MM5Et3Xbtju0esJ89K8bkRe+xA==
+"@windicss/config@1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@windicss/config/-/config-1.2.7.tgz#c70bde7de272574f7a33eb9a1d7f80bdbffe48ba"
+  integrity sha512-XpH/dkXWk2LGygHzHBWWEW/yGcLqhpFFN2jo+zMeWZ1ggBzndQQzBHqHGQHcr6U6v3PoBuOz1prVWgUmQxn9eQ==
   dependencies:
     debug "^4.3.2"
-    jiti "^1.10.1"
-    windicss "^3.1.4"
+    jiti "^1.11.0"
+    windicss "^3.1.6"
 
-"@windicss/plugin-utils@1.2.5":
-  version "1.2.5"
-  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.2.5.tgz#60bab999b894f513852ebcf4a0113066b86f1938"
-  integrity sha512-RUFhW5l3YYkuNwYM1u7F/RoIpibULE7qe2N7D/rtiJVDf67lL9S8hjTll1/d7pvvW5XtI+fDuc8GpmGwARg83A==
+"@windicss/plugin-utils@1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.2.7.tgz#aa2c571f66600ce2c916c9c47efe8eafb229908c"
+  integrity sha512-aNQhd1nEjkVsCHmzq0+4VGTmovOGGfPnH2hspH4YuDxMDhQ/99VrBdyk7irngWJjedjHB3+UYCSYWpY5a+2Hbg==
   dependencies:
     "@antfu/utils" "^0.2.4"
-    "@windicss/config" "1.2.5"
+    "@windicss/config" "1.2.7"
     debug "^4.3.2"
-    fast-glob "^3.2.6"
+    fast-glob "^3.2.7"
     magic-string "^0.25.7"
     micromatch "^4.0.4"
-    windicss "^3.1.4"
+    windicss "^3.1.6"
 
 acorn-jsx@^5.3.1:
   version "5.3.1"
@@ -1196,7 +1196,7 @@ debug@^3.2.7:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.0.1, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
+debug@^4.0.1, debug@^4.1.1, debug@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
@@ -1784,7 +1784,7 @@ fast-glob@^3.1.1, fast-glob@^3.2.5:
     micromatch "^4.0.2"
     picomatch "^2.2.1"
 
-fast-glob@^3.2.6:
+fast-glob@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/fast-glob/-/fast-glob-3.2.7.tgz#fd6cb7a2d7e9aa7a7846111e85a196d6b2f766a1"
   integrity sha512-rYGMRwip6lUMvYD3BTScMwT1HtAs2d71SMv66Vrxs0IekGZEjhM0pcMfjQPnknBt2zeCwQMEupiN02ZP4DiT1Q==
@@ -2580,10 +2580,10 @@ jest-worker@27.0.0-next.5:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jiti@^1.10.1:
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.10.1.tgz#bc2a175b9435274dc8659d3d9a121a91c6b3a1af"
-  integrity sha512-qux9juDtAC8HlZxAk/fku73ak4TWNLigRFTNzFShE/kw4bXVFsVu538vLXAxvNyPszXgpX4YxkXfwTYEi+zf5A==
+jiti@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.11.0.tgz#64120a30d97b9bf37b8b032cf4564dfadc28984c"
+  integrity sha512-/2c7e61hxxTIN34UeHBB0LCJ5Tq64kgJDV7GR+++e8XRxCKRIKmB8tH6ww1W+Z6Kgd6By+C3RSCu1lXjbPT68A==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -4775,23 +4775,23 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-windicss-webpack-plugin@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.4.2.tgz#a405eef6427a3236fd2bb652fd2abfa2493925a3"
-  integrity sha512-PInaM4H1LlQ048k8kxz0oKranI2pd7cNT6E/BOmnmS2EZTaym0xBWHr3cBy+BEe5GH8aQVlUVlNaiU1icNDbrw==
+windicss-webpack-plugin@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.4.3.tgz#4a8f436b06b0473ec243c6b5a134d44b000cbcc8"
+  integrity sha512-TRgiKa8hZVwjDsf9HMl4GwNFq5awo/WM83joR0aTar6kuvSi0DEPGC9hS9kTIAUvVOeeOyd5nHEvwYpP8pPJQw==
   dependencies:
-    "@windicss/plugin-utils" "1.2.5"
-    debug "^4.3.1"
+    "@windicss/plugin-utils" "1.2.7"
+    debug "^4.3.2"
     loader-utils "^2.0.0"
     magic-string "^0.25.7"
     upath "^2.0.1"
     webpack-virtual-modules "^0.4.3"
-    windicss "3.1.5"
+    windicss "3.1.6"
 
-windicss@3.1.5, windicss@^3.1.4:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.1.5.tgz#e9b6d6adcbc6f6c6e33e6625a3e5923b328f3137"
-  integrity sha512-sGi2YiN6Bp/vWJS0jlpJhMmh7O2TBQ+yTbL6oqoRXz32q1VKELOUMfF+5pdtVL5uoVnfKf4gOUQs2XKNgU30Lw==
+windicss@3.1.6, windicss@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/windicss/-/windicss-3.1.6.tgz#237f24be8b38f90f451eedda166c46c25227c608"
+  integrity sha512-9/ShTPRs2pg/AJo4PtbgDv9p7BUgR52WqL7Gpr8VSO6LH8z4I/oKamUAlSXqyLsWD6yKS+xtxF3FRiHVJwYcuQ==
 
 word-wrap@^1.2.3:
   version "1.2.3"
