@@ -1613,10 +1613,10 @@ eslint-plugin-react@^7.23.1:
     resolve "^2.0.0-next.3"
     string.prototype.matchall "^4.0.4"
 
-eslint-plugin-tailwindcss@^1.15.0:
-  version "1.15.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-1.15.0.tgz#dc72d4aac9e3dc352ed8c6cb406cff3bb32b9274"
-  integrity sha512-rmStwf6wqAJ/TaIoVKbl1GtmWE3ssxzPXH+9cO0PRalkFtHHNmGCGUUsyeWanoe5+qQywLY/3DmlX2oUHpRBDg==
+eslint-plugin-tailwindcss@^1.16.1:
+  version "1.16.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-tailwindcss/-/eslint-plugin-tailwindcss-1.16.1.tgz#12d8a0816651850283a99780a845eaff67b51362"
+  integrity sha512-nOmZ2lQKhLJjGTrrEnVnE9l/xXHq7IodiqtV3fQ8QjMB1m25/Jvz4T8jy/ntY//qs+nbH9e5EDbs0gHX3J8I/Q==
   dependencies:
     fast-glob "^3.2.5"
     postcss "^8.3.0"
