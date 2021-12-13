@@ -223,10 +223,10 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.0.6.tgz#023d72a5c4531b4ce204528971700a78a85a0c50"
   integrity sha512-Myxw//kzromB9yWgS8qYGuGVf91oBUUJpNvy5eM50sqvmKLbKjwLxohJnkWGTeeI9v9IBMtPLxz5Gc60FIfvCA==
 
-"@types/chrome@^0.0.168":
-  version "0.0.168"
-  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.168.tgz#e92df6601acc07427845a58b5bc62be4330d9b5f"
-  integrity sha512-kMA+5H9PSO7kEixgFgehp8xxzBV5qR9hyLCCt8j4/BIf5SJXXtVB6ik2uycU8PHgfFtMDgIC5/qQZplifYon2g==
+"@types/chrome@^0.0.170":
+  version "0.0.170"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.170.tgz#4692a94ce8400d21325386f2c0174bb56ed730b8"
+  integrity sha512-X6IKLdc/fJyCKxGlCUauL3OKmnhzS29Q2NnlErAiLC3voxvSVG1ISG+l24Q3kFZXmnc543KzElIjDQRvQ/yEBQ==
   dependencies:
     "@types/filesystem" "*"
     "@types/har-format" "*"
