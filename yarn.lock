@@ -4590,10 +4590,10 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
-tailwindcss-classnames@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/tailwindcss-classnames/-/tailwindcss-classnames-2.2.3.tgz#46cd9f4ee982f21aaf694760a4fb03a568690c70"
-  integrity sha512-BY7wIiZZE8wHnazsy04zRFFFmVL3qQmznAfpmXVvZaS7pg/nphXeKhgWs1AA8bXxlIOtaPYWYlqrVk6Zaw4/OA==
+tailwindcss-classnames@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-classnames/-/tailwindcss-classnames-3.0.0.tgz#3c1baa7fd7f60e9b92c6528dacc34533246bea43"
+  integrity sha512-eCrONKJFhzqjVCx2aHS47dwgAx6O8EDAScHWI4hYB3229L1CET31Pe6AYujBut5Jl77mrTIG314VRKBzm3VPcw==
   dependencies:
     clsx "^1.1.1"
     colors "^1.4.0"
