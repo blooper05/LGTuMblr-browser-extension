@@ -1046,7 +1046,7 @@ colorette@^1.2.2:
   resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
   integrity sha512-MKGMzyfeuutC/ZJ1cba9NqcNpfeqMUcYmyF1ZFY6/Cn7CNSAKx6a+s48sqLqyAiZuaP2TcqMhoo+dlwFnVxT9w==
 
-colors@^1.4.0:
+colors@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
@@ -4590,13 +4590,13 @@ table@^6.0.9:
     string-width "^4.2.0"
     strip-ansi "^6.0.0"
 
-tailwindcss-classnames@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/tailwindcss-classnames/-/tailwindcss-classnames-2.2.3.tgz#46cd9f4ee982f21aaf694760a4fb03a568690c70"
-  integrity sha512-BY7wIiZZE8wHnazsy04zRFFFmVL3qQmznAfpmXVvZaS7pg/nphXeKhgWs1AA8bXxlIOtaPYWYlqrVk6Zaw4/OA==
+tailwindcss-classnames@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/tailwindcss-classnames/-/tailwindcss-classnames-3.0.2.tgz#a44e3126b71d08e6b53616dbce6fdfdb1b4d39b0"
+  integrity sha512-z7DB7kNU9o1i2zxiswf/ai7xFk7xpGvH4tF3wcelM+0RbMKw+pEX1Yi/aXP1YabIzoRF8IrslKFjku7Mzaq3XA==
   dependencies:
     clsx "^1.1.1"
-    colors "^1.4.0"
+    colors "1.4.0"
     commander "^7.0.0"
     inquirer "^8.1.1"
     lodash "^4.17.15"
