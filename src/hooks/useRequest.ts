@@ -10,8 +10,10 @@ const getKey = (pageIndex: number, previousPageData: any) => {
 };
 
 const Hook = () => {
-  const { data, error, size, setSize } = useSWRInfinite(getKey, (url: string) =>
-    fetch(url).then((res) => res.json()),
+  const { data, error, size, setSize } = useSWRInfinite(
+    getKey,
+    (url: string) => fetch(url).then((res) => res.json()),
+    { revalidateFirstPage: false },
   );
 
   return { data, error, size, setSize };
