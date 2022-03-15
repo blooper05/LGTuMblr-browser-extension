@@ -1,4 +1,12 @@
-import { classnames } from 'tailwindcss-classnames';
+import {
+  classnames,
+  padding,
+  width,
+  backgroundColor,
+  display,
+  gridTemplateColumns,
+  gap,
+} from 'tailwindcss-classnames';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Image from '../components/Image';
 import Loader from '../components/Loader';
@@ -6,8 +14,17 @@ import Error from '../components/Error';
 import useFetchImages from '../hooks/useRequest';
 
 const classNames = {
-  main: classnames('p-4', 'w-full', 'bg-white'),
-  grid: classnames('grid', 'grid-cols-4', 'gap-8', 'p-4'),
+  main: classnames(
+    padding('p-4'),
+    width('w-full'),
+    backgroundColor('bg-white'),
+  ),
+  grid: classnames(
+    display('grid'),
+    gridTemplateColumns('grid-cols-4'),
+    gap('gap-8'),
+    padding('p-4'),
+  ),
 };
 
 export default function Index() {

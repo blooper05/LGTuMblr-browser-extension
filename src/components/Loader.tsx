@@ -1,16 +1,31 @@
-import { classnames } from 'tailwindcss-classnames';
+import {
+  classnames,
+  display,
+  justifyContent,
+  padding,
+  margin,
+  height,
+  width,
+  backgroundColor,
+  borderRadius,
+  animation,
+} from 'tailwindcss-classnames';
 
 const classNames = {
-  main: classnames('flex', 'justify-center', 'p-12'),
-  logo: classnames('-mr-8', '-ml-16', 'h-64'),
+  main: classnames(
+    display('flex'),
+    justifyContent('justify-center'),
+    padding('p-12'),
+  ),
+  logo: classnames(margin('mr-8', 'ml-16'), height('h-64')), // FIXME: refs. https://github.com/muhammadsammy/tailwindcss-classnames/issues/350
+  // logo: classnames(margin('-mr-8', '-ml-16'), height('h-64')),
   dot: classnames(
-    'my-auto',
-    'mr-1',
-    'w-2.5',
-    'h-2.5',
-    'bg-blue-200',
-    'rounded-full',
-    'animate-bounce',
+    margin('my-auto', 'mr-1'),
+    width('w-2.5'),
+    height('h-2.5'),
+    backgroundColor('bg-blue-200'),
+    borderRadius('rounded-full'),
+    animation('animate-bounce'),
   ),
 };
 

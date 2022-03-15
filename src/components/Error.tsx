@@ -1,8 +1,19 @@
-import { classnames } from 'tailwindcss-classnames';
+import {
+  classnames,
+  display,
+  justifyContent,
+  padding,
+  margin,
+  textColor,
+} from 'tailwindcss-classnames';
 
 const classNames = {
-  main: classnames('flex', 'justify-center', 'p-12'),
-  message: classnames('my-auto', 'text-blue-400'),
+  main: classnames(
+    display('flex'),
+    justifyContent('justify-center'),
+    padding('p-12'),
+  ),
+  message: classnames(margin('my-auto'), textColor('text-blue-400')),
 };
 
 const Component = () => (
