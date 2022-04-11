@@ -289,7 +289,7 @@
     jiti "^1.13.0"
     windicss "^3.5.1"
 
-"@windicss/plugin-utils@^1.8.2":
+"@windicss/plugin-utils@^1.8.3":
   version "1.8.3"
   resolved "https://registry.yarnpkg.com/@windicss/plugin-utils/-/plugin-utils-1.8.3.tgz#cec2bdc7703357de348e4512d61c7bd7802b049a"
   integrity sha512-emlMeDt73uNV1ZofLTDogcxqL9aZ5uIRYkjeHlrWiaDozFbX6Jc+a6eRo9Ieaar3JUryl6AnecTPHAiFDl4IXg==
@@ -3481,12 +3481,12 @@ which@^2.0.1:
   dependencies:
     isexe "^2.0.0"
 
-windicss-webpack-plugin@^1.6.7:
-  version "1.6.7"
-  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.6.7.tgz#274c6ccc0c66e0a55d03a4679dea54b7f08997db"
-  integrity sha512-wMC0+/buGBMqbS6d2jCUGh51J2qSAwIBrwOCmd44GqXTIJs+uNzptYlwijj+V7ykgGn6nmR0fyxH72Ramw2LZA==
+windicss-webpack-plugin@^1.6.9:
+  version "1.6.9"
+  resolved "https://registry.yarnpkg.com/windicss-webpack-plugin/-/windicss-webpack-plugin-1.6.9.tgz#b9e313fc8039e4268986f72a9a4f8a15d8174c91"
+  integrity sha512-NNV5UlZLIJOL6zOebGsXWO8W8pMFCLw+W5UR1Hwf+tkemANi4huqAvTces5PQN0HrsI0LfG+R1/m6xl3EuYe/g==
   dependencies:
-    "@windicss/plugin-utils" "^1.8.2"
+    "@windicss/plugin-utils" "^1.8.3"
     debug "^4.3.3"
     loader-utils "^2.0.0"
     lodash "^4.17.21"
