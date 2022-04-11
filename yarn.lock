@@ -3244,10 +3244,10 @@ swr@^1.2.2:
   resolved "https://registry.yarnpkg.com/swr/-/swr-1.2.2.tgz#6cae09928d30593a7980d80f85823e57468fac5d"
   integrity sha512-ky0BskS/V47GpW8d6RU7CPsr6J8cr7mQD6+do5eky3bM0IyJaoi3vO8UhvrzJaObuTlGhPl2szodeB2dUd76Xw==
 
-tailwindcss-classnames@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/tailwindcss-classnames/-/tailwindcss-classnames-3.0.3.tgz#1b5ed9e50bd2126846ae0a3f83469248b999de9d"
-  integrity sha512-anvPHgvlQMdCddhlZqvvCcu9xbjvQZwKR1RghdULZH9K459TH8tnJnqaierxi/A9la/t0GDRX5QWwsaNMspYDw==
+tailwindcss-classnames@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/tailwindcss-classnames/-/tailwindcss-classnames-3.0.4.tgz#16e34dd391067ba258a54198bbd3f2f7e0f86f4e"
+  integrity sha512-aBCMZSWIMdnjT8QaIxwBxZ/0dVSyKFNNxAKeeWEKhcTxdSxArcRfTklmOCOAizCFxXtMJMtD82kV6mPt6FgRQw==
   dependencies:
     clsx "^1.1.1"
     colors "1.4.0"
