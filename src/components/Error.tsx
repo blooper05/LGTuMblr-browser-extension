@@ -1,25 +1,9 @@
-import {
-  classnames,
-  display,
-  justifyContent,
-  padding,
-  margin,
-  textColor,
-} from 'tailwindcss-classnames';
-
-const classNames = {
-  main: classnames(
-    display('flex'),
-    justifyContent('justify-center'),
-    padding('p-12'),
-  ),
-  message: classnames(margin('my-auto'), textColor('text-blue-400')),
-};
+import { Center, Text } from '@chakra-ui/react';
 
 const Component = () => (
-  <div className={classNames.main}>
-    <span className={classNames.message}>Oops, something went wrong!</span>
-  </div>
+  <Center padding={12}>
+    <Text color="blue.400">Oops, something went wrong!</Text>
+  </Center>
 );
 
 export default Component;

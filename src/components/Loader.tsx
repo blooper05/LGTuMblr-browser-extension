@@ -1,41 +1,46 @@
-import {
-  classnames,
-  display,
-  justifyContent,
-  padding,
-  margin,
-  height,
-  width,
-  backgroundColor,
-  borderRadius,
-  animation,
-} from 'tailwindcss-classnames';
+import { Center, Image, HStack, Circle } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
 
-const classNames = {
-  main: classnames(
-    display('flex'),
-    justifyContent('justify-center'),
-    padding('p-12'),
-  ),
-  logo: classnames(margin('mr-8', 'ml-16'), height('h-64')), // FIXME: refs. https://github.com/muhammadsammy/tailwindcss-classnames/issues/350
-  // logo: classnames(margin('-mr-8', '-ml-16'), height('h-64')),
-  dot: classnames(
-    margin('my-auto', 'mr-1'),
-    width('w-2.5'),
-    height('h-2.5'),
-    backgroundColor('bg-blue-200'),
-    borderRadius('rounded-full'),
-    animation('animate-bounce'),
-  ),
-};
+const MotionHStack = motion(HStack);
+const MotionCircle = motion(Circle);
 
 const Component = ({ withLogo }: { withLogo?: boolean }) => (
-  <div className={classNames.main}>
-    {withLogo && <img className={classNames.logo} src="/images/logo.svg" />}
-    <span className={classNames.dot} style={{ animationDelay: '100ms' }}></span>
-    <span className={classNames.dot} style={{ animationDelay: '300ms' }}></span>
-    <span className={classNames.dot} style={{ animationDelay: '500ms' }}></span>
-  </div>
+  <Center padding={12}>
+    {withLogo && (
+      <Image
+        marginLeft={-4}
+        marginRight={-8}
+        height={64}
+        src="/images/logo.svg"
+      />
+    )}
+    <MotionHStack
+      spacing={1}
+      animate="animate"
+      variants={{
+        animate: { transition: { delayChildren: 0.1, staggerChildren: 0.2 } },
+      }}
+    >
+      <MotionCircle
+        size={2.5}
+        bgColor="blue.200"
+        variants={{ animate: { y: '-25%' } }}
+        transition={{ duration: 0.5, yoyo: Infinity, ease: 'easeInOut' }}
+      ></MotionCircle>
+      <MotionCircle
+        size={2.5}
+        bgColor="blue.200"
+        variants={{ animate: { y: '-25%' } }}
+        transition={{ duration: 0.5, yoyo: Infinity, ease: 'easeInOut' }}
+      ></MotionCircle>
+      <MotionCircle
+        size={2.5}
+        bgColor="blue.200"
+        variants={{ animate: { y: '-25%' } }}
+        transition={{ duration: 0.5, yoyo: Infinity, ease: 'easeInOut' }}
+      ></MotionCircle>
+    </MotionHStack>
+  </Center>
 );
 
 export default Component;
