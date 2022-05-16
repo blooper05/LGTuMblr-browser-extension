@@ -31,7 +31,7 @@ const Component = ({ url }: { url: string }) => (
       translateY: '-0.5rem',
     }}
   >
-    <Image boxSize="full" objectFit="cover" src={url} onClick={handleClick} />
+    <Image src={url} alt="" onClick={handleClick} />
   </MotionCenter>
 );
 
