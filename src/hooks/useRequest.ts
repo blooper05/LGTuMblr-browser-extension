@@ -9,15 +9,13 @@ const getKey = (pageIndex: number, previousPageData: any) => {
   return API_BASE_URL + params;
 };
 
+const fetcher = (url: string) => fetch(url).then((res) => res.json());
+
 const Hook = () => {
-  const { data, error, size, setSize } = useSWRInfinite(
-    getKey,
-    (url: string) => fetch(url).then((res) => res.json()),
-    {
-      initialSize: 2,
-      revalidateFirstPage: false,
-    },
-  );
+  const { data, error, size, setSize } = useSWRInfinite(getKey, fetcher, {
+    initialSize: 2,
+    revalidateFirstPage: false,
+  });
 
   return { data, error, size, setSize };
 };
