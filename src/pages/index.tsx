@@ -1,6 +1,6 @@
 import { Container, SimpleGrid } from '@chakra-ui/react';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import Image from '../components/Image';
+import Card from '../components/Card';
 import Loader from '../components/Loader';
 import Error from '../components/Error';
 import useFetchImages from '../hooks/useRequest';
@@ -24,7 +24,7 @@ export default function Index() {
       >
         <SimpleGrid columns={4} spacing={8} padding={4}>
           {fetchedData.map((url: string, i: number) => (
-            <Image url={url} key={i} />
+            <Card url={url} key={i} />
           ))}
         </SimpleGrid>
       </InfiniteScroll>
