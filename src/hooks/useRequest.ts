@@ -2,7 +2,7 @@ import useSWRInfinite from 'swr/infinite';
 
 const BASE_URL = 'https://lgtumblr-api.herokuapp.com/images';
 
-const getKey = (pageIndex: number, previousPageData: any) => {
+const getKey = (pageIndex: number, previousPageData: string[]) => {
   if (previousPageData && !previousPageData.length) return null;
 
   const params = `?identifier=${pageIndex}`;
