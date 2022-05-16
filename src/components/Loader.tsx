@@ -6,14 +6,7 @@ const MotionCircle = motion(Circle);
 
 const Component = ({ withLogo }: { withLogo?: boolean }) => (
   <Center height={withLogo ? '100vh' : '15vh'}>
-    {withLogo && (
-      <Image
-        marginLeft={-4}
-        marginRight={-8}
-        height={64}
-        src="/images/logo.svg"
-      />
-    )}
+    {withLogo && <Image height={64} src="/images/logo.svg" />}
     <MotionHStack
       spacing={1}
       animate="animate"
