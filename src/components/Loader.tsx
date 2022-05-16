@@ -14,24 +14,15 @@ const Component = ({ withLogo }: { withLogo?: boolean }) => (
         animate: { transition: { delayChildren: 0.1, staggerChildren: 0.2 } },
       }}
     >
-      <MotionCircle
-        size={2.5}
-        bgColor="blue.200"
-        variants={{ animate: { y: '-25%' } }}
-        transition={{ duration: 0.5, yoyo: Infinity, ease: 'easeInOut' }}
-      ></MotionCircle>
-      <MotionCircle
-        size={2.5}
-        bgColor="blue.200"
-        variants={{ animate: { y: '-25%' } }}
-        transition={{ duration: 0.5, yoyo: Infinity, ease: 'easeInOut' }}
-      ></MotionCircle>
-      <MotionCircle
-        size={2.5}
-        bgColor="blue.200"
-        variants={{ animate: { y: '-25%' } }}
-        transition={{ duration: 0.5, yoyo: Infinity, ease: 'easeInOut' }}
-      ></MotionCircle>
+      {[...Array(3)].map((i: number) => (
+        <MotionCircle
+          size={2.5}
+          bgColor="blue.200"
+          variants={{ animate: { y: '-25%' } }}
+          transition={{ duration: 0.5, yoyo: Infinity, ease: 'easeInOut' }}
+          key={i}
+        />
+      ))}
     </MotionHStack>
   </Center>
 );
