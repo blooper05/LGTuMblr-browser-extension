@@ -26,9 +26,9 @@ const Component = ({ url }: { url: string }) => (
     overflow="hidden"
     whileHover={{
       cursor: 'pointer',
-      scale: 1.1,
-      transition: { duration: 0.5, ease: 'easeInOut' },
-      translateY: '-0.25rem',
+      scale: 1.05,
+      transition: { duration: 0.3, ease: 'backInOut' },
+      translateY: '-0.5rem',
     }}
   >
     <Image boxSize="full" objectFit="cover" src={url} onClick={handleClick} />
