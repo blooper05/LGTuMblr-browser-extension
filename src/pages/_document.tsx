@@ -5,7 +5,8 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body style={{ minWidth: '800px' }}>
+        {/* NOTE: refs. https://bugs.chromium.org/p/chromium/issues/detail?id=1161137 */}
+        <body style={{ minWidth: '800px', minHeight: '601px' }}>
           <Main />
           <NextScript />
         </body>
