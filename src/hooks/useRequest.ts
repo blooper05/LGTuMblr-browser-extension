@@ -13,7 +13,10 @@ const Hook = () => {
   const { data, error, size, setSize } = useSWRInfinite(
     getKey,
     (url: string) => fetch(url).then((res) => res.json()),
-    { revalidateFirstPage: false },
+    {
+      initialSize: 2,
+      revalidateFirstPage: false,
+    },
   );
 
   return { data, error, size, setSize };
