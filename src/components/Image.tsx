@@ -1,4 +1,7 @@
 import { Center, Image } from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+
+const MotionCenter = motion(Center);
 
 const REGEXP = new RegExp('https://64.media.tumblr.com/');
 const PREFIX =
@@ -16,19 +19,20 @@ const handleClick = (event: React.MouseEvent<HTMLImageElement, MouseEvent>) => {
 };
 
 const Component = ({ url }: { url: string }) => (
-  <Center
-    _hover={{
-      cursor: 'pointer',
-      transform: 'scale(1.1) translateY(-0.25rem)',
-      transition: '500ms ease-in-out',
-    }}
+  <MotionCenter
     borderRadius="lg"
     boxShadow="lg"
     margin="auto"
     overflow="hidden"
+    whileHover={{
+      cursor: 'pointer',
+      scale: 1.1,
+      transition: { duration: 0.5, ease: 'easeInOut' },
+      translateY: '-0.25rem',
+    }}
   >
     <Image boxSize="full" objectFit="cover" src={url} onClick={handleClick} />
-  </Center>
+  </MotionCenter>
 );
 
 export default Component;
