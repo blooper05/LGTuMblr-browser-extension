@@ -1,4 +1,4 @@
-import { Box, SimpleGrid } from '@chakra-ui/react';
+import { Container, SimpleGrid } from '@chakra-ui/react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import Image from '../components/Image';
 import Loader from '../components/Loader';
@@ -15,7 +15,7 @@ export default function Index() {
   const fetchedData = [].concat(...data);
 
   return (
-    <Box bgColor="white" padding={4} width="full">
+    <Container maxWidth="full" padding={4}>
       <InfiniteScroll
         next={fetchData}
         hasMore={true}
@@ -28,6 +28,6 @@ export default function Index() {
           ))}
         </SimpleGrid>
       </InfiniteScroll>
-    </Box>
+    </Container>
   );
 }
