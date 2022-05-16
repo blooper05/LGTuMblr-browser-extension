@@ -5,7 +5,7 @@ const MotionHStack = motion(HStack);
 const MotionCircle = motion(Circle);
 
 const Component = ({ withLogo }: { withLogo?: boolean }) => (
-  <Center padding={12}>
+  <Center height={withLogo ? '100vh' : '15vh'}>
     {withLogo && (
       <Image
         marginLeft={-4}
