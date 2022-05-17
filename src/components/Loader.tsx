@@ -18,8 +18,21 @@ const Component = ({ withLogo }: { withLogo?: boolean }) => (
         <MotionCircle
           size={2.5}
           bgColor="blue.200"
-          variants={{ animate: { y: '-25%' } }}
-          transition={{ duration: 0.5, yoyo: Infinity, ease: 'easeInOut' }}
+          variants={{
+            animate: {
+              y: ['-25%', '0%', '-25%'],
+              transition: {
+                duration: 1,
+                repeat: Infinity,
+                repeatType: 'reverse',
+                ease: [
+                  [0.8, 0, 1, 1],
+                  [0, 0, 0.2, 1],
+                  [0.8, 0, 1, 1],
+                ],
+              },
+            },
+          }}
           key={i}
         />
       ))}
