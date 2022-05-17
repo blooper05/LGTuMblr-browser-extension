@@ -8,7 +8,9 @@
     "export": "next export",
     "postexport": "cpx --clean './out/_next/**/*' ./out/assets/_next/ && rimraf ./out/_next/",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preserve": "yarn export",
+    "serve": "serve ./out/"
   },
   "dependencies": {
     "next": "12.1.6",
