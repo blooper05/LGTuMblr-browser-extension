@@ -3,11 +3,9 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "preexport": "next build",
     "export": "next export",
     "postexport": "cpx --clean './out/_next/**/*' ./out/assets/_next/ && rimraf ./out/_next/",
-    "start": "next start",
     "lint": "next lint",
     "preserve": "yarn export",
     "serve": "serve ./out/"
