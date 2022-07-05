@@ -21,7 +21,7 @@
     "@chakra-ui/react": "^2.2.1",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@types/chrome": "^0.0.191",
+    "@types/chrome": "^0.0.193",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
