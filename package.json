@@ -24,7 +24,7 @@
     "@types/chrome": "^0.0.193",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
-    "@types/react-dom": "18.0.5",
+    "@types/react-dom": "18.0.6",
     "cpx2": "^4.2.0",
     "eslint": "8.18.0",
     "eslint-config-next": "12.1.6",
