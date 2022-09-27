@@ -5,7 +5,9 @@
   "scripts": {
     "preexport": "next build",
     "export": "next export",
+    "format": "prettier --write --cache --cache-strategy metadata .",
     "lint": "next lint",
+    "lint:fix": "yarn lint --fix && yarn format",
     "preserve": "yarn export",
     "serve": "serve ./out/"
   },
