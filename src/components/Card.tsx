@@ -1,5 +1,6 @@
 import { Center, Image } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
+import NextImage from 'next/future/image';
 
 const MotionCenter = motion(Center);
 
@@ -31,7 +32,7 @@ const Component = ({ url }: { url: string }) => (
       translateY: '-0.5rem',
     }}
   >
-    <Image src={url} alt="" onClick={handleClick} />
+    <Image as={NextImage} src={url} alt="" onClick={handleClick} />
   </MotionCenter>
 );
 
