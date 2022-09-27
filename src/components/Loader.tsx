@@ -1,13 +1,14 @@
 import { Center, Image, HStack, Circle } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import NextImage from 'next/future/image';
+import logo from '../assets/logo.svg';
 
 const MotionHStack = motion(HStack);
 const MotionCircle = motion(Circle);
 
 const Component = ({ withLogo }: { withLogo?: boolean }) => (
   <Center height={withLogo ? '100vh' : '15vh'}>
-    {withLogo && <Image as={NextImage} height={64} src="/images/logo.svg" alt="logo" />}
+    {withLogo && <Image as={NextImage} height={64} src={logo} alt="logo" />}
     <MotionHStack
       spacing={1}
       animate="animate"
