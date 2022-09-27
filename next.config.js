@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: { unoptimized: true },
   reactStrictMode: true,
   swcMinify: true,
+
+  images: {
+    unoptimized: true,
+  },
 
   webpack(config) {
     config.module.rules.push({
