@@ -5,7 +5,6 @@
   "scripts": {
     "preexport": "next build",
     "export": "next export",
-    "postexport": "cpx --clean './out/_next/**/*' ./out/assets/_next/ && rimraf ./out/_next/",
     "lint": "next lint",
     "preserve": "yarn export",
     "serve": "serve ./out/"
