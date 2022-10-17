@@ -22,7 +22,7 @@
     "@chakra-ui/react": "^2.3.6",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@svgr/webpack": "^6.4.0",
+    "@svgr/webpack": "^6.5.0",
     "@types/chrome": "^0.0.197",
     "@types/node": "18.8.4",
     "@types/react": "18.0.21",
