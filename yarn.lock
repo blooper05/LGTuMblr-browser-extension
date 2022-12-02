@@ -3553,9 +3553,9 @@ focus-lock@^0.11.2:
     tslib "^2.0.3"
 
 framer-motion@^7:
-  version "7.6.6"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-7.6.6.tgz#50e0d3bc29b899a79dbafb6085e398fb53a2f04a"
-  integrity sha512-7ti5mEzhTRBFCMlKs8Zxu9dWtVattpj2jPCNc4jaz4d7bDFekClALaBzmi1pGOKzsOWJsKMeV5ckIkD1DLI9lw==
+  version "7.6.17"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-7.6.17.tgz#195223e8897f3b9b41c350e3f6309fa9f6db5c32"
+  integrity sha512-NmGBjKMCWlTDT156zR8G+jcpiM8OXbvmlgf1CPsVNk5x2RqJ9tieBKMNr6/OjJhirwyOp9s8bt8TsfrrCBIsEw==
   dependencies:
     "@motionone/dom" "10.13.1"
     framesync "6.1.2"
